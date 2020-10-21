@@ -1,0 +1,3 @@
+1) As a client, I want an ordered list of Barber Shop according to the distance, So that I can choose one.
+2) As a client, I want to book a beard product, So that I can buy it in the shop.
+3) As a Barber, I want a list of booked clients sorted by date and time, so that I can organize my work.
