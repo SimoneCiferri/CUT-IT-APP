@@ -1,0 +1,4 @@
+The system shall send the following e-mail message to clients when a busy appointment that the client would book becomes available:
+      •	The appointment you would book is now available, cut-it!
+The system shall provide clients a rating feature for haircut images.
+The system shall provide a connection to Google Maps.
