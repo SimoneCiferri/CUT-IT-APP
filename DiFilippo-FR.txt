@@ -1,0 +1,5 @@
+1) The system shall provide a list of the hairdressers in order to allow the choice of whom's going to do the job.
+
+2) The system shall provide a feature that allows hairdressers to upload photos.
+
+3) The system shall provide a list of all the haircuts available in a specific shop.
