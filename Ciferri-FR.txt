@@ -1,5 +1,5 @@
-1) The system shall provide a list of Barber Shop sorted by distance.
+1) The system shall provide a list of Hairdressers sorted by distance.
 2) The system shall:
-	provide clients a feature for booking available products;
-	provide Barbers a product adding feature.
+	provide clients a feature for booking products;
+	provide Hairdressers a product adding feature.
 3) The system shall provide a list of booked customers sorted by date and time.
