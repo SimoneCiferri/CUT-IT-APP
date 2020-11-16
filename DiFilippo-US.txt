@@ -1,5 +1,5 @@
-1) As a client, I want to be able to choose the hairdresser who will do the job, so that I can decide according to my tastes.
+1) As a customer, I want to choose the hairdresser who will do the job, so that I can have the perfect haircut.
 
-2) As a Hairdresser, I want to upload photos of the best haircuts that I’ve done, so that I can show to all my clients the quality of my work.
+2) As a Hairdresser, I want to upload images, so that I can show to all my customers the best haircuts that I have done.
 
-3) As a client, I want that the system can give me the possibility to choose what kind of haircut I want, so that I can speed up everything.
+3) As a customer, I want to choose what kind of haircut I want, so that I can speed up the appointment.
