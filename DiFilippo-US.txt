@@ -3,3 +3,4 @@
 2) As a Hairdresser, I want to upload images, so that I can show to all my customers the best haircuts that I have done.
 
 3) As a customer, I want to choose what kind of haircut I want, so that I can speed up the appointment.
+
