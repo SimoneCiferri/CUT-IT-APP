@@ -6,6 +6,8 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.control.ToolBar;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuButton;
+import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 
@@ -15,6 +17,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundImage;
+
 
 public class HomeControllerGrafico {
 	
@@ -29,6 +32,23 @@ public class HomeControllerGrafico {
 	
 	@FXML
 	private Button homeButton;
+	
+	@FXML
+	private Button favButton;
+	
+	@FXML
+	private Button appointmentButton;
+	
+	@FXML
+	private MenuButton userMenuButton;
+	
+	@FXML
+	private Button promotionButton;
+	
+	@FXML
+	private AnchorPane aPane;
+	
+	
 	
 	public boolean initialize() {
 		Image image = new Image("codice/immagini/mainBackground.png", 1100, 800, true, false);
@@ -46,6 +66,7 @@ public class HomeControllerGrafico {
 		mainLayout= MainView.getPrLayout();
 		homeLayout = FXMLLoader.load(MainView.class.getResource("homeView.fxml"));
 		mainLayout.setCenter(homeLayout);
+		System.out.println("Home Button pressed");
 		return true;
 	}
 	
