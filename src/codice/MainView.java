@@ -21,8 +21,9 @@ public class MainView extends Application {
 	@Override
 	public void start(Stage stage) throws Exception {
 		setMainLayout(stage);
-		startPrLayout();
 		prStage.setTitle("CUT-IT");
+		startPrLayout();
+		
 		
 		startPrLayout();
 		
