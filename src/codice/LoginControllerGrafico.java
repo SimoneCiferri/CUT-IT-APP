@@ -47,7 +47,7 @@ public class LoginControllerGrafico {
 	
 	@FXML
 	public boolean initialize() {
-		Image image = new Image("codice/immagini/barbfoto1.jpg", 800, 600, true, false);
+		Image image = new Image("codice/immagini/mainBackground.png", 800, 600, true, false);
 		BackgroundImage sfondo = new BackgroundImage(image, null, null, null, null);
 		title.setText("CUT-IT");
 		title.setTranslateX(-130);
