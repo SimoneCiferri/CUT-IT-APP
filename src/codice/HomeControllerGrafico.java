@@ -48,9 +48,12 @@ public class HomeControllerGrafico {
 	@FXML
 	private AnchorPane aPane;
 	
+	@FXML
+	private Button startButton;
 	
 	
-	public boolean initialize() {
+	
+	public boolean initialize() throws IOException {
 		Image image = new Image("codice/immagini/mainBackground.png", 1100, 800, true, false);
 		BackgroundImage sfondo = new BackgroundImage(image, null, null, null, null);
 		bPane.setBackground(new Background(sfondo));

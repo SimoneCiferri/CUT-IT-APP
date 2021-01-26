@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
 
 <BorderPane id="bPane" fx:id="bPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="codice.HomeControllerGrafico">
    <top>
@@ -16,7 +18,7 @@
                   <Button id="homeButton" fx:id="homeButton" mnemonicParsing="false" onAction="#goHome" prefHeight="40.0" prefWidth="150.0" style="-fx-border-width: 0; -fx-border-color: transparent; -fx-background-radius: 0; -fx-background-color: transparent;" text="Home" underline="true" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
                   <Button id="favButton" fx:id="favButton" layoutX="150.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-border-width: 0; -fx-border-color: transparent; -fx-background-radius: 0; -fx-background-color: transparent;" text="Preferiti" underline="true" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
                   <Button id="appointmentButton" fx:id="appointmentButton" layoutX="300.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-border-width: 0; -fx-border-color: transparent; -fx-background-radius: 0; -fx-background-color: transparent;" text="Appuntamenti" underline="true" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                  <MenuButton id="userMenuButton" fx:id="userMenuButton" alignment="CENTER" contentDisplay="CENTER" layoutX="787.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-border-width: 0; -fx-border-color: transparent; -fx-background-radius: 0; -fx-background-color: transparent;" text="Login" textAlignment="CENTER" underline="true" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <MenuButton id="userMenuButton" fx:id="userMenuButton" alignment="CENTER" contentDisplay="CENTER" layoutX="787.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-border-width: 0; -fx-border-color: transparent; -fx-background-radius: 0; -fx-background-color: transparent;" text="User" textAlignment="CENTER" underline="true" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <items>
                       <MenuItem mnemonicParsing="false" text="Action 1" />
                       <MenuItem mnemonicParsing="false" text="Action 2" />
@@ -28,4 +30,16 @@
          </items>
       </ToolBar>
    </top>
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="538.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="startButton" layoutX="194.0" layoutY="332.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goHome" prefHeight="50.0" prefWidth="150.0" text="Let's Start !" textAlignment="CENTER" underline="true" wrapText="true" />
+            <Label alignment="CENTER" layoutY="8.0" prefHeight="81.0" prefWidth="538.0" text="Welcome to CUT-IT!" textAlignment="CENTER">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
 </BorderPane>
