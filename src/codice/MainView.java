@@ -18,8 +18,6 @@ public class MainView extends Application {
 	public void start(Stage stage) throws Exception {
 		setMainLayout(stage);
 		prStage.setTitle("CUT-IT");
-		startPrLayout();
-		
 		
 		startPrLayout();
 		

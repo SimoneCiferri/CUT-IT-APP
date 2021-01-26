@@ -57,6 +57,7 @@ public class HomeControllerGrafico {
 		Image image = new Image("codice/immagini/mainBackground.png", 1100, 800, true, false);
 		BackgroundImage sfondo = new BackgroundImage(image, null, null, null, null);
 		bPane.setBackground(new Background(sfondo));
+		
 		setToolbar(TBar);
 		
 		return false;
