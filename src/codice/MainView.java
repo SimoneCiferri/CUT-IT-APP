@@ -11,12 +11,10 @@ import javafx.stage.Stage;
 
 public class MainView extends Application {
 	
-	private boolean Running=false;
+	
 	private static Stage prStage;
 	private static BorderPane prLayout;
-	private BorderPane homeLayout = null;
-	private BorderPane signupLayout = null;
-	private BorderPane statusBar = null;
+	private boolean Running=false;
 	
 	@Override
 	public void start(Stage stage) throws Exception {

@@ -3,34 +3,62 @@ package codice;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.FXML;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.control.PasswordField;
+import javafx.scene.control.ToolBar;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Button;
+
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Label;
-import javafx.scene.text.Font;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundImage;
 
 public class HomeControllerGrafico {
 	
-	private BorderPane mainLayout = MainView.getPrLayout();
-	private String style = "-fx-text-fill: #000000";
-	private String backgroundStyle = "-fx-background-radius: 10";
+	private BorderPane mainLayout = null;
+	private static ToolBar tb;
 	
 	@FXML
 	private BorderPane bPane;
 	
+	@FXML
+	private ToolBar TBar;
+	
+	@FXML
+	private Button homeButton;
+	
 	public boolean initialize() {
 		Image image = new Image("codice/immagini/mainBackground.png", 1100, 800, true, false);
 		BackgroundImage sfondo = new BackgroundImage(image, null, null, null, null);
-		
-		
 		bPane.setBackground(new Background(sfondo));
+		
+		setToolbar(TBar);
 		
 		return false;
 	}
+	
+	@FXML
+	public boolean goHome() throws IOException {
+		BorderPane homeLayout = null;
+		mainLayout= MainView.getPrLayout();
+		homeLayout = FXMLLoader.load(MainView.class.getResource("homeView.fxml"));
+		mainLayout.setCenter(homeLayout);
+		return true;
+	}
+	
+	
+	
+	public static void setToolbar(ToolBar toolbar) {
+		tb = toolbar;
+	}
+	
+	public static ToolBar getToolbar() {
+		return tb;
+	}
+	
+	
 	
 }
