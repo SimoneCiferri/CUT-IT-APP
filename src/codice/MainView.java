@@ -35,7 +35,7 @@ public class MainView extends Application {
 	}
 	
 	public static boolean startPrLayout() throws IOException {
-		prLayout = FXMLLoader.load(MainView.class.getResource("homeView.fxml"));
+		prLayout = FXMLLoader.load(MainView.class.getResource("navBar.fxml"));
 		return true;
 	}
 	
