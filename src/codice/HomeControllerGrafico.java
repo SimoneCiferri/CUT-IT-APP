@@ -24,7 +24,7 @@ public class HomeControllerGrafico {
 	private BorderPane bPane;
 	
 	public boolean initialize() {
-		Image image = new Image("codice/immagini/mainBackground.png", 2100, 1500, true, false);
+		Image image = new Image("codice/immagini/mainBackground.png", 1024, 768, true, false);
 		BackgroundImage sfondo = new BackgroundImage(image, null, null, null, null);
 		
 		
