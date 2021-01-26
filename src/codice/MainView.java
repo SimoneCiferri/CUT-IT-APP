@@ -21,6 +21,7 @@ public class MainView extends Application {
 	@Override
 	public void start(Stage stage) throws Exception {
 		setMainLayout(stage);
+		startPrLayout();
 		prStage.setTitle("CUT-IT");
 		
 		startPrLayout();
@@ -33,7 +34,7 @@ public class MainView extends Application {
 	}
 	
 	public static boolean startPrLayout() throws IOException {
-		prLayout = FXMLLoader.load(MainView.class.getResource("login.fxml"));
+		prLayout = FXMLLoader.load(MainView.class.getResource("homeView.fxml"));
 		return true;
 	}
 	
