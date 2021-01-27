@@ -70,6 +70,11 @@ public class HomeControllerGrafico {
 		mainLayout= MainView.getPrLayout();
 		homeLayout = FXMLLoader.load(MainView.class.getResource("views/homeView.fxml"));
 		mainLayout.setCenter(homeLayout);
+		homeButton.setStyle("-fx-background-color: #707070; ");
+		favButton.setStyle("-fx-background-color: transparent; ");
+		appointmentButton.setStyle("-fx-background-color: transparent; ");
+		promotionButton.setStyle("-fx-background-color: transparent; ");
+		
 		System.out.println("Home Button pressed");
 		return true;
 	}
@@ -80,6 +85,10 @@ public class HomeControllerGrafico {
 		mainLayout= MainView.getPrLayout();
 		homeLayout = FXMLLoader.load(MainView.class.getResource("views/Preferiti.fxml"));
 		mainLayout.setCenter(homeLayout);
+		homeButton.setStyle("-fx-background-color: transparent; ");
+		favButton.setStyle("-fx-background-color: #707070; ");
+		appointmentButton.setStyle("-fx-background-color: transparent; ");
+		promotionButton.setStyle("-fx-background-color: transparent; ");
 		System.out.println("Favourites Button pressed");
 		return true;
 	}
@@ -90,6 +99,10 @@ public class HomeControllerGrafico {
 		mainLayout= MainView.getPrLayout();
 		homeLayout = FXMLLoader.load(MainView.class.getResource("views/Appointment.fxml"));
 		mainLayout.setCenter(homeLayout);
+		homeButton.setStyle("-fx-background-color: transparent; ");
+		favButton.setStyle("-fx-background-color: transparent; ");
+		appointmentButton.setStyle("-fx-background-color: #707070; ");
+		promotionButton.setStyle("-fx-background-color: transparent; ");
 		System.out.println("Appointment Button pressed");
 		return true;
 	}
@@ -100,6 +113,10 @@ public class HomeControllerGrafico {
 		mainLayout= MainView.getPrLayout();
 		homeLayout = FXMLLoader.load(MainView.class.getResource("views/Promotion.fxml"));
 		mainLayout.setCenter(homeLayout);
+		homeButton.setStyle("-fx-background-color: transparent; ");
+		favButton.setStyle("-fx-background-color: transparent; ");
+		appointmentButton.setStyle("-fx-background-color: transparent; ");
+		promotionButton.setStyle("-fx-background-color: #707070; ");
 		System.out.println("Promotion Button pressed");
 		return true;
 	}
