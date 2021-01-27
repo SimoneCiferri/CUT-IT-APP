@@ -12,11 +12,7 @@
    <center>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="824.0" BorderPane.alignment="CENTER">
          <children>
-            <ScrollPane layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="824.0">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="604.0" prefWidth="822.0" style="-fx-background-color: #FFFFFF;" />
-              </content>
-            </ScrollPane>
+            <ScrollPane layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="824.0" />
          </children>
       </AnchorPane>
    </center>
