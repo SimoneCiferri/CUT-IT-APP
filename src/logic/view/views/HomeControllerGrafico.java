@@ -70,7 +70,7 @@ public class HomeControllerGrafico {
 		mainLayout= MainView.getPrLayout();
 		homeLayout = FXMLLoader.load(MainView.class.getResource("views/homeView.fxml"));
 		mainLayout.setCenter(homeLayout);
-		homeButton.setStyle("-fx-background-color: #707070; ");
+		homeButton.setStyle("-fx-background-color: #707070; -fx-text-fill: #FFFFFF; ");
 		favButton.setStyle("-fx-background-color: transparent; ");
 		appointmentButton.setStyle("-fx-background-color: transparent; ");
 		promotionButton.setStyle("-fx-background-color: transparent; ");
@@ -86,7 +86,7 @@ public class HomeControllerGrafico {
 		homeLayout = FXMLLoader.load(MainView.class.getResource("views/Preferiti.fxml"));
 		mainLayout.setCenter(homeLayout);
 		homeButton.setStyle("-fx-background-color: transparent; ");
-		favButton.setStyle("-fx-background-color: #707070; ");
+		favButton.setStyle("-fx-background-color: #707070;  -fx-text-fill: #FFFFFF; ");
 		appointmentButton.setStyle("-fx-background-color: transparent; ");
 		promotionButton.setStyle("-fx-background-color: transparent; ");
 		System.out.println("Favourites Button pressed");
@@ -101,7 +101,7 @@ public class HomeControllerGrafico {
 		mainLayout.setCenter(homeLayout);
 		homeButton.setStyle("-fx-background-color: transparent; ");
 		favButton.setStyle("-fx-background-color: transparent; ");
-		appointmentButton.setStyle("-fx-background-color: #707070; ");
+		appointmentButton.setStyle("-fx-background-color: #707070;  -fx-text-fill: #FFFFFF; ");
 		promotionButton.setStyle("-fx-background-color: transparent; ");
 		System.out.println("Appointment Button pressed");
 		return true;
@@ -116,7 +116,7 @@ public class HomeControllerGrafico {
 		homeButton.setStyle("-fx-background-color: transparent; ");
 		favButton.setStyle("-fx-background-color: transparent; ");
 		appointmentButton.setStyle("-fx-background-color: transparent; ");
-		promotionButton.setStyle("-fx-background-color: #707070; ");
+		promotionButton.setStyle("-fx-background-color: #707070;  -fx-text-fill: #FFFFFF; ");
 		System.out.println("Promotion Button pressed");
 		return true;
 	}
