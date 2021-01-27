@@ -68,7 +68,7 @@ public class HomeControllerGrafico {
 	public boolean goHome() throws IOException {
 		BorderPane homeLayout = null;
 		mainLayout= MainView.getPrLayout();
-		homeLayout = FXMLLoader.load(MainView.class.getResource("homeView.fxml"));
+		homeLayout = FXMLLoader.load(MainView.class.getResource("views/homeView.fxml"));
 		mainLayout.setCenter(homeLayout);
 		System.out.println("Home Button pressed");
 		return true;
