@@ -75,19 +75,31 @@ public class HomeControllerGrafico {
 	}
 	
 	@FXML
-	public boolean goFav() {
+	public boolean goFav() throws IOException {
+		BorderPane homeLayout = null;
+		mainLayout= MainView.getPrLayout();
+		homeLayout = FXMLLoader.load(MainView.class.getResource("views/Preferiti.fxml"));
+		mainLayout.setCenter(homeLayout);
 		System.out.println("Favourites Button pressed");
 		return true;
 	}
 	
 	@FXML
-	public boolean goApp() {
+	public boolean goApp() throws IOException {
+		BorderPane homeLayout = null;
+		mainLayout= MainView.getPrLayout();
+		homeLayout = FXMLLoader.load(MainView.class.getResource("views/Appointment.fxml"));
+		mainLayout.setCenter(homeLayout);
 		System.out.println("Appointment Button pressed");
 		return true;
 	}
 	
 	@FXML
-	public boolean goProm() {
+	public boolean goProm() throws IOException {
+		BorderPane homeLayout = null;
+		mainLayout= MainView.getPrLayout();
+		homeLayout = FXMLLoader.load(MainView.class.getResource("views/Promotion.fxml"));
+		mainLayout.setCenter(homeLayout);
 		System.out.println("Promotion Button pressed");
 		return true;
 	}
