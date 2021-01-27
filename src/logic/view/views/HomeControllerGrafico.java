@@ -1,8 +1,9 @@
-package codice;
+package logic.view.views;
 
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.FXML;
 import javafx.scene.layout.BorderPane;
+import logic.view.MainView;
 import javafx.scene.control.ToolBar;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Button;
@@ -54,7 +55,7 @@ public class HomeControllerGrafico {
 	
 	
 	public boolean initialize() throws IOException {
-		Image image = new Image("codice/immagini/mainBackground.png", 1100, 800, true, false);
+		Image image = new Image("logic/Files/mainBackground.png", 1100, 800, true, false);
 		BackgroundImage sfondo = new BackgroundImage(image, null, null, null, null);
 		bPane.setBackground(new Background(sfondo));
 		

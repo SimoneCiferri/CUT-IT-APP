@@ -1,4 +1,4 @@
-package codice;
+package logic.view;
 
 import java.io.IOException;
 import javafx.application.Application;
@@ -29,7 +29,7 @@ public class MainView extends Application {
 	}
 	
 	public static boolean startPrLayout() throws IOException {
-		prLayout = FXMLLoader.load(MainView.class.getResource("startWithNavBar.fxml"));
+		prLayout = FXMLLoader.load(MainView.class.getResource("views/startWithNavBar.fxml"));
 		return true;
 	}
 	

@@ -1,4 +1,4 @@
-package codice;
+package logic.view.views;
 
 
 import javafx.fxml.FXMLLoader;
@@ -11,6 +11,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Label;
 import javafx.scene.text.Font;
+import logic.view.MainView;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundImage;
