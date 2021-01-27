@@ -73,7 +73,23 @@ public class HomeControllerGrafico {
 		return true;
 	}
 	
+	@FXML
+	public boolean goFav() {
+		System.out.println("Favourites Button pressed");
+		return true;
+	}
 	
+	@FXML
+	public boolean goApp() {
+		System.out.println("Appointment Button pressed");
+		return true;
+	}
+	
+	@FXML
+	public boolean goProm() {
+		System.out.println("Promotion Button pressed");
+		return true;
+	}
 	
 	public static void setToolbar(ToolBar toolbar) {
 		tb = toolbar;
