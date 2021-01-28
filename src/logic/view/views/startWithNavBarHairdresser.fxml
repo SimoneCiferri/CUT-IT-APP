@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane id="bPane" fx:id="bPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <ToolBar fx:id="tBar" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <AnchorPane id="aPane" fx:id="aPane" layoutX="7.0" prefHeight="40.0" prefWidth="1010.0">
+               <children>
+                  <Button id="homeButton" fx:id="ShopButton" defaultButton="true" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-border-width: 0; -fx-border-color: transparent; -fx-background-radius: 0; -fx-background-color: transparent;" text="Shop" underline="true" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Button id="appointmentButton" fx:id="appointmentHairdresserButton" layoutX="150.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-border-width: 0; -fx-border-color: transparent; -fx-background-radius: 0; -fx-background-color: transparent;" text="Appuntamenti" underline="true" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Button id="promotionButton" fx:id="promotionHairdresserButton" layoutX="300.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-border-width: 0; -fx-border-color: transparent; -fx-background-radius: 0; -fx-background-color: transparent;" text="Promozioni" underline="true" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <MenuButton id="userMenuButton" fx:id="userMenuButton" alignment="CENTER" contentDisplay="CENTER" layoutX="787.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" style="-fx-border-width: 0; -fx-border-color: transparent; -fx-background-radius: 0; -fx-background-color: transparent;" text="User" textAlignment="CENTER" underline="true" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <MenuItem fx:id="loginAction" mnemonicParsing="false" onAction="#goLogin" text="LogIn" />
+                      <MenuItem fx:id="signUp" mnemonicParsing="false" onAction="#goLogin" text="SingUp" />
+                    </items>
+                  </MenuButton>
+               </children>
+            </AnchorPane>
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="538.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
