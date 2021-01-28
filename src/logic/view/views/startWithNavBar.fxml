@@ -5,6 +5,8 @@
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
@@ -25,6 +27,16 @@
                     </items>
                   </MenuButton>
                   <Button id="promotionButton" fx:id="promotionButton" layoutX="450.0" mnemonicParsing="false" onAction="#goProm" prefHeight="40.0" prefWidth="150.0" style="-fx-border-width: 0; -fx-border-color: transparent; -fx-background-radius: 0; -fx-background-color: transparent;" text="Promozioni" underline="true" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <ImageView fitHeight="30.0" fitWidth="28.0" layoutX="20.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../downloads2/home.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="844.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../downloads2/ios7-contact_icon-icons.com_50286.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
          </items>
