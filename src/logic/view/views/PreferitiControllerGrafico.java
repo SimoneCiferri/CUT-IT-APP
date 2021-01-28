@@ -12,7 +12,7 @@ import javafx.scene.control.ToolBar;
 import javafx.scene.layout.BorderPane;
 import logic.view.MainView;
 
-public class bookAppointmentControllerGrafico {
+public class PreferitiControllerGrafico {
 	
 	private BorderPane mainLayout = MainView.getPrLayout();
 	

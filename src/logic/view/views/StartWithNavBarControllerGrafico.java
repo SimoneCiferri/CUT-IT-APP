@@ -26,7 +26,7 @@ public class StartWithNavBarControllerGrafico {
 	private BorderPane bPane;
 	
 	@FXML
-	private ToolBar TBar;
+	private ToolBar tBar;
 	
 	@FXML
 	private Button homeButton;
@@ -60,7 +60,7 @@ public class StartWithNavBarControllerGrafico {
 		BackgroundImage sfondo = new BackgroundImage(image, null, null, null, null);
 		bPane.setBackground(new Background(sfondo));
 		
-		setToolbar(TBar);
+		setToolbar(tBar);
 		
 		return false;
 	}
