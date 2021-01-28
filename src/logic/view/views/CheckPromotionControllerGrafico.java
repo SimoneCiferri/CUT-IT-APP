@@ -16,7 +16,7 @@ import logic.view.MainView;
 
 public class CheckPromotionControllerGrafico {
 	
-	private BorderPane mainLayout = MainView.getPrLayout();
+	private BorderPane mainLayout = null;
 	
 	@FXML
 	private BorderPane bHPane;
