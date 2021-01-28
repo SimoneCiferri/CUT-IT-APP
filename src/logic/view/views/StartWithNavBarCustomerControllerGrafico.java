@@ -15,7 +15,7 @@ import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.BorderPane;
 import logic.view.MainView;
 
-public class StartWithNavBarControllerGrafico {
+public class StartWithNavBarCustomerControllerGrafico {
 	
 	private BorderPane mainLayout = null;
 	private static ToolBar tb;
@@ -32,10 +32,19 @@ public class StartWithNavBarControllerGrafico {
 	private Button homeButton;
 	
 	@FXML
+	private Button ndHomeButton;
+	
+	@FXML
+	private Button favButton;
+	
+	@FXML
+	private Button appointmentButton;
+	
+	@FXML
 	private Button promotionButton;
 	
 	@FXML
-	private Button loginSignupButton;
+	private Button logOut;
 	
 	@FXML
 	private AnchorPane aPane;
@@ -60,13 +69,41 @@ public class StartWithNavBarControllerGrafico {
 		homeLayout = FXMLLoader.load(MainView.class.getResource("views/homeView.fxml"));
 		mainLayout.setCenter(homeLayout);
 		homeButton.setStyle(pageFlagStyle);
+		favButton.setStyle(transparentStyle);
+		appointmentButton.setStyle(transparentStyle);
 		promotionButton.setStyle(transparentStyle);
 		
 		System.out.println("Home Button pressed");
 		return true;
 	}
 	
+	@FXML
+	public boolean goFav() throws IOException {
+		BorderPane homeLayout = null;
+		mainLayout= MainView.getPrLayout();
+		homeLayout = FXMLLoader.load(MainView.class.getResource("views/Preferiti.fxml"));
+		mainLayout.setCenter(homeLayout);
+		homeButton.setStyle(transparentStyle);
+		favButton.setStyle(pageFlagStyle);
+		appointmentButton.setStyle(transparentStyle);
+		promotionButton.setStyle(transparentStyle);
+		System.out.println("Favourites Button pressed");
+		return true;
+	}
 	
+	@FXML
+	public boolean goApp() throws IOException {
+		BorderPane homeLayout = null;
+		mainLayout= MainView.getPrLayout();
+		homeLayout = FXMLLoader.load(MainView.class.getResource("views/Appointment.fxml"));
+		mainLayout.setCenter(homeLayout);
+		homeButton.setStyle(transparentStyle);
+		favButton.setStyle(transparentStyle);
+		appointmentButton.setStyle(pageFlagStyle);
+		promotionButton.setStyle(transparentStyle);
+		System.out.println("Appointment Button pressed");
+		return true;
+	}
 	
 	@FXML
 	public boolean goProm() throws IOException {
@@ -75,6 +112,8 @@ public class StartWithNavBarControllerGrafico {
 		homeLayout = FXMLLoader.load(MainView.class.getResource("views/Promotion.fxml"));
 		mainLayout.setCenter(homeLayout);
 		homeButton.setStyle(transparentStyle);
+		favButton.setStyle(transparentStyle);
+		appointmentButton.setStyle(transparentStyle);
 		promotionButton.setStyle(pageFlagStyle);
 		System.out.println("Promotion Button pressed");
 		return true;
@@ -87,8 +126,16 @@ public class StartWithNavBarControllerGrafico {
 		homeLayout = FXMLLoader.load(MainView.class.getResource("views/login.fxml"));
 		mainLayout.setCenter(homeLayout);
 		homeButton.setStyle(transparentStyle);
+		favButton.setStyle(transparentStyle);
+		appointmentButton.setStyle(transparentStyle);
 		promotionButton.setStyle(transparentStyle);
 		System.out.println("Login or SignUp Button pressed");
+		return true;
+	}
+	
+	@FXML
+	public boolean logout() {
+		System.out.println("Logout Customer Button pressed");
 		return true;
 	}
 	
@@ -102,3 +149,4 @@ public class StartWithNavBarControllerGrafico {
 	
 	
 }
+

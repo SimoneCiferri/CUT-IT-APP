@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
@@ -16,12 +14,7 @@
                   <Button id="shopButton" fx:id="shopButton" defaultButton="true" mnemonicParsing="false" onAction="#goShop" prefHeight="40.0" prefWidth="150.0" style="-fx-border-width: 0; -fx-border-color: transparent; -fx-background-radius: 0; -fx-background-color: transparent;" text="Shop" underline="true" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
                   <Button id="appointmentButton" fx:id="appointmentHairdresserButton" layoutX="150.0" mnemonicParsing="false" onAction="#goAppHairdr" prefHeight="40.0" prefWidth="150.0" style="-fx-border-width: 0; -fx-border-color: transparent; -fx-background-radius: 0; -fx-background-color: transparent;" text="Appuntamenti" underline="true" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
                   <Button id="promotionButton" fx:id="promotionHairdresserButton" layoutX="300.0" mnemonicParsing="false" onAction="#goPromHairdr" prefHeight="40.0" prefWidth="150.0" style="-fx-border-width: 0; -fx-border-color: transparent; -fx-background-radius: 0; -fx-background-color: transparent;" text="Promozioni" underline="true" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                  <MenuButton id="userMenuButton" fx:id="userMenuButtonHairdr" alignment="CENTER" contentDisplay="CENTER" layoutX="787.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" style="-fx-border-width: 0; -fx-border-color: transparent; -fx-background-radius: 0; -fx-background-color: transparent;" text="User" textAlignment="CENTER" underline="true" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <items>
-                      <MenuItem fx:id="loginAction" mnemonicParsing="false" text="LogIn" />
-                      <MenuItem fx:id="signUp" mnemonicParsing="false" text="SingUp" />
-                    </items>
-                  </MenuButton>
+                  <Button fx:id="logoutH" layoutX="881.0" layoutY="-2.0" mnemonicParsing="false" onAction="#logout" prefHeight="42.0" prefWidth="129.0" style="-fx-border-image-width: 0; -fx-border-color: transparent; -fx-background-radius: 0; -fx-background-color: transparent;" text="logout" underline="true" wrapText="true" />
                </children>
             </AnchorPane>
          </items>

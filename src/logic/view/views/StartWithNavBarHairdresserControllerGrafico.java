@@ -36,6 +36,9 @@ public class StartWithNavBarHairdresserControllerGrafico {
 	private Button promotionHairdresserButton;
 	
 	@FXML
+	private Button logoutH;
+	
+	@FXML
 	private MenuButton userMenuButtonHairdr;
 	
 	public boolean initialize() throws IOException {
@@ -59,6 +62,12 @@ public class StartWithNavBarHairdresserControllerGrafico {
 	@FXML
 	public boolean goPromHairdr() {
 		System.out.println("Hairdresser Promotion Button pressed");
+		return true;
+	}
+	
+	@FXML
+	public boolean logout() {
+		System.out.println("Hairdresser logout Button pressed");
 		return true;
 	}
 }
