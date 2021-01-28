@@ -8,7 +8,6 @@ import javafx.scene.control.ToolBar;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.MenuButton;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.AnchorPane;
 
@@ -27,7 +26,7 @@ import javafx.scene.layout.BackgroundImage;
 
 public class HomeControllerGrafico {
 	
-	private BorderPane mainLayout = null;
+	private BorderPane mainLayout = MainView.getPrLayout();
 	private static ToolBar tb;
 	
 	@FXML
