@@ -6,7 +6,11 @@ import javafx.fxml.FXML;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToolBar;
 import javafx.scene.control.Button;
+
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Label;
@@ -19,6 +23,7 @@ import javafx.scene.layout.BackgroundImage;
 public class LoginControllerGrafico {
 	
 	private BorderPane mainLayout = MainView.getPrLayout();
+	private  ToolBar tb=StartWithNavBarControllerGrafico.getToolbar();
 	private String style = "-fx-text-fill: #000000";
 	private String backgroundStyle = "-fx-background-radius: 10";
 	
@@ -47,9 +52,11 @@ public class LoginControllerGrafico {
 	private Label title;
 	
 	@FXML
+	private Button backHome;
+	
+	@FXML
 	public boolean initialize() {
-		Image image = new Image("logic/Files/mainBackground.png", 800, 600, true, false);
-		BackgroundImage sfondo = new BackgroundImage(image, null, null, null, null);
+		tb.setVisible(false);
 		title.setText("CUT-IT");
 		title.setTranslateX(-130);
 		title.setTranslateY(10);
@@ -64,7 +71,7 @@ public class LoginControllerGrafico {
 		loginBtn.setStyle(backgroundStyle);
 		signupBtn.setStyle(backgroundStyle);
 		signupBtn.setStyle("-fx-background-color:  #b51c1c");
-		pane.setBackground(new Background(sfondo));
+		
 		
 		loginBtn.setOnAction((new EventHandler<ActionEvent>() {
 			

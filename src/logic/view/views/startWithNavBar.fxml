@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane id="bPane" fx:id="bPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.view.views.HomeControllerGrafico">
+<BorderPane id="bPane" fx:id="bPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.view.views.StartWithNavBarControllerGrafico">
    <top>
       <ToolBar fx:id="TBar" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <items>
@@ -20,8 +20,8 @@
                   <Button id="appointmentButton" fx:id="appointmentButton" layoutX="300.0" mnemonicParsing="false" onAction="#goApp" prefHeight="40.0" prefWidth="150.0" style="-fx-border-width: 0; -fx-border-color: transparent; -fx-background-radius: 0; -fx-background-color: transparent;" text="Appuntamenti" underline="true" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
                   <MenuButton id="userMenuButton" fx:id="userMenuButton" alignment="CENTER" contentDisplay="CENTER" layoutX="787.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-border-width: 0; -fx-border-color: transparent; -fx-background-radius: 0; -fx-background-color: transparent;" text="User" textAlignment="CENTER" underline="true" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <items>
-                      <MenuItem mnemonicParsing="false" text="LogIn" />
-                      <MenuItem mnemonicParsing="false" text="SingUp" />
+                      <MenuItem fx:id="loginAction" mnemonicParsing="false" onAction="#goLogin" text="LogIn" />
+                      <MenuItem fx:id="signUp" mnemonicParsing="false" onAction="#goLogin" text="SingUp" />
                     </items>
                   </MenuButton>
                   <Button id="promotionButton" fx:id="promotionButton" layoutX="450.0" mnemonicParsing="false" onAction="#goProm" prefHeight="40.0" prefWidth="150.0" style="-fx-border-width: 0; -fx-border-color: transparent; -fx-background-radius: 0; -fx-background-color: transparent;" text="Promozioni" underline="true" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
