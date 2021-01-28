@@ -64,7 +64,7 @@ public class HomeControllerGrafico {
 	
 	@FXML
 	public boolean serachShop() {
-		System.out.println("Serach Shop Button pressed");
+		System.out.println("Search Shop Button pressed");
 		return true;
 	}
 }
