@@ -33,6 +33,10 @@ public class MainView extends Application {
 		return true;
 	}
 	
+	public static void setPrLayout(BorderPane prL) {
+		prLayout=prL;
+	}
+	
 	public static void setMainLayout(Stage stage1) {
 		prStage=stage1;
 	}

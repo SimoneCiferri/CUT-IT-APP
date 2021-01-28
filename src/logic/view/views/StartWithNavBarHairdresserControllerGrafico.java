@@ -6,7 +6,10 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.ToolBar;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.BorderPane;
 import logic.view.MainView;
 
@@ -42,7 +45,11 @@ public class StartWithNavBarHairdresserControllerGrafico {
 	private MenuButton userMenuButtonHairdr;
 	
 	public boolean initialize() throws IOException {
+		Image image = new Image("logic/Files/mainBackground.png", 1100, 800, true, false);
+		BackgroundImage sfondo = new BackgroundImage(image, null, null, null, null);
+		bPaneHairdr.setBackground(new Background(sfondo));
 		
+		setToolbar(tBarHairdr);
 		return false;
 		
 	}
@@ -78,5 +85,13 @@ public class StartWithNavBarHairdresserControllerGrafico {
 	public boolean logout() {
 		System.out.println("Hairdresser logout Button pressed");
 		return true;
+	}
+	
+	public static void setToolbar(ToolBar toolbar) {
+		tb = toolbar;
+	}
+	
+	public static ToolBar getToolbar() {
+		return tb;
 	}
 }

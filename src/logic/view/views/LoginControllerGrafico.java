@@ -106,6 +106,7 @@ public class LoginControllerGrafico {
 		System.out.println("Customer logged");
 		BorderPane homeLayout = null;
 		homeLayout = FXMLLoader.load(MainView.class.getResource("views/startWithNavBarCustomer.fxml"));
+		MainView.setPrLayout(homeLayout);
 		Scene scene = new Scene(homeLayout);
 		prStage.setScene(scene);
 		return true;
@@ -116,6 +117,7 @@ public class LoginControllerGrafico {
 		System.out.println("Hairdresser logged");
 		BorderPane homeLayout = null;
 		homeLayout = FXMLLoader.load(MainView.class.getResource("views/startWithNavBarHairdresser.fxml"));
+		MainView.setPrLayout(homeLayout);
 		Scene scene = new Scene(homeLayout);
 		prStage.setScene(scene);
 		return true;

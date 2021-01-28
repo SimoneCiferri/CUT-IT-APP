@@ -72,11 +72,11 @@ public class StartWithNavBarControllerGrafico {
 	public boolean goProm() throws IOException {
 		BorderPane homeLayout = null;
 		mainLayout= MainView.getPrLayout();
-		homeLayout = FXMLLoader.load(MainView.class.getResource("views/Promotion.fxml"));
+		homeLayout = FXMLLoader.load(MainView.class.getResource("views/promotionInfo.fxml"));
 		mainLayout.setCenter(homeLayout);
 		homeButton.setStyle(transparentStyle);
 		promotionButton.setStyle(pageFlagStyle);
-		System.out.println("Promotion Button pressed");
+		System.out.println("PromotionInfo Button pressed");
 		return true;
 	}
 	
