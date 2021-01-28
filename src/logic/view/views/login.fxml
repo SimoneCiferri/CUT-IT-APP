@@ -67,6 +67,8 @@
                            </font></Label>
                      </children>
                   </AnchorPane>
+                  <Button fx:id="testloginC" mnemonicParsing="false" onAction="#logC" text="testloginCustomer" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Button fx:id="testLoginH" mnemonicParsing="false" onAction="#logH" text="testLoginHairdresser" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="5" />
                </children>
             </GridPane>
          </children>

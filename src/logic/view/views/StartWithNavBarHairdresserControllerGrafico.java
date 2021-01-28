@@ -49,18 +49,27 @@ public class StartWithNavBarHairdresserControllerGrafico {
 	
 	@FXML
 	public boolean goShop() {
+		shopButton.setStyle(pageFlagStyle);
+		appointmentHairdresserButton.setStyle(transparentStyle);
+		promotionHairdresserButton.setStyle(transparentStyle);
 		System.out.println("Shop Button pressed");
 		return true;
 	}
 	
 	@FXML
 	public boolean goAppHairdr() {
+		shopButton.setStyle(transparentStyle);
+		appointmentHairdresserButton.setStyle(pageFlagStyle);
+		promotionHairdresserButton.setStyle(transparentStyle);
 		System.out.println("Hairdresser Appointment Button pressed");
 		return true;
 	}
 	
 	@FXML
 	public boolean goPromHairdr() {
+		shopButton.setStyle(transparentStyle);
+		appointmentHairdresserButton.setStyle(transparentStyle);
+		promotionHairdresserButton.setStyle(pageFlagStyle);
 		System.out.println("Hairdresser Promotion Button pressed");
 		return true;
 	}

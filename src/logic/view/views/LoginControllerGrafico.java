@@ -7,6 +7,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToolBar;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 
 import java.io.IOException;
@@ -15,6 +16,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Label;
 import javafx.scene.text.Font;
+import javafx.stage.Stage;
 import logic.view.MainView;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Background;
@@ -23,6 +25,7 @@ import javafx.scene.layout.BackgroundImage;
 public class LoginControllerGrafico {
 	
 	private BorderPane mainLayout = MainView.getPrLayout();
+	private static Stage prStage=MainView.getPrWindow();
 	private  ToolBar tb=StartWithNavBarControllerGrafico.getToolbar();
 	private String style = "-fx-text-fill: #000000";
 	private String backgroundStyle = "-fx-background-radius: 10";
@@ -53,6 +56,12 @@ public class LoginControllerGrafico {
 	
 	@FXML
 	private Button backHome;
+	
+	@FXML
+	private Button testloginC;
+	
+	@FXML
+	private Button testLoginH;
 	
 	@FXML
 	public boolean initialize() {
@@ -92,4 +101,23 @@ public class LoginControllerGrafico {
 		return false;
 	}
 	
+	@FXML
+	public boolean logC() throws IOException {
+		System.out.println("Customer logged");
+		BorderPane homeLayout = null;
+		homeLayout = FXMLLoader.load(MainView.class.getResource("views/startWithNavBarCustomer.fxml"));
+		Scene scene = new Scene(homeLayout);
+		prStage.setScene(scene);
+		return true;
+	}
+	
+	@FXML
+	public boolean logH() throws IOException {
+		System.out.println("Hairdresser logged");
+		BorderPane homeLayout = null;
+		homeLayout = FXMLLoader.load(MainView.class.getResource("views/startWithNavBarHairdresser.fxml"));
+		Scene scene = new Scene(homeLayout);
+		prStage.setScene(scene);
+		return true;
+	}
 }
