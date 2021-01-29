@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
@@ -13,10 +14,12 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 import logic.view.MainView;
 
 public class StartWithNavBarCustomerControllerGrafico {
 	
+	private Stage prStage=MainView.getPrWindow();
 	private BorderPane mainLayout = null;
 	private static ToolBar tb;
 	private String transparentStyle = "-fx-background-color: transparent; ";
@@ -134,7 +137,12 @@ public class StartWithNavBarCustomerControllerGrafico {
 	}
 	
 	@FXML
-	public boolean logout() {
+	public boolean logout() throws IOException {
+		BorderPane homeLayout = null;
+		homeLayout = FXMLLoader.load(MainView.class.getResource("views/startWithNavBar.fxml"));
+		MainView.setPrLayout(homeLayout);
+		Scene scene = new Scene(homeLayout);
+		prStage.setScene(scene);
 		System.out.println("Logout Customer Button pressed");
 		return true;
 	}
