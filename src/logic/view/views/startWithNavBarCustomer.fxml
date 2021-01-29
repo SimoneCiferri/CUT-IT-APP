@@ -26,8 +26,8 @@
    <center>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="538.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="ndHomeButton" layoutX="194.0" layoutY="399.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goHome" prefHeight="50.0" prefWidth="150.0" text="Go Home" textAlignment="CENTER" underline="true" wrapText="true" />
-            <Label alignment="CENTER" layoutY="136.0" prefHeight="80.0" prefWidth="545.0" text="Welcome back to CUT-IT!" textAlignment="CENTER">
+            <Button fx:id="ndHomeButton" layoutX="194.0" layoutY="307.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goHome" prefHeight="50.0" prefWidth="150.0" text="Go Home" textAlignment="CENTER" underline="true" wrapText="true" />
+            <Label alignment="CENTER" layoutY="47.0" prefHeight="80.0" prefWidth="545.0" text="Welcome back to CUT-IT!" textAlignment="CENTER">
                <font>
                   <Font size="48.0" />
                </font>
