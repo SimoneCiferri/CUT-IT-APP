@@ -24,7 +24,6 @@ import javafx.scene.layout.BackgroundImage;
 
 public class LoginControllerGrafico {
 	
-	private BorderPane mainLayout = MainView.getPrLayout();
 	private static Stage prStage=MainView.getPrWindow();
 	private  ToolBar tb=StartWithNavBarControllerGrafico.getToolbar();
 	private String style = "-fx-text-fill: #000000";
