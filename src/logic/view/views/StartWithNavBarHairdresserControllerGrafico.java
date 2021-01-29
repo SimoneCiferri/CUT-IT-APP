@@ -40,6 +40,9 @@ public class StartWithNavBarHairdresserControllerGrafico {
 	private Button promotionHairdresserButton;
 	
 	@FXML
+	private Button goAppointment;
+	
+	@FXML
 	private Button logoutH;
 	
 	@FXML
