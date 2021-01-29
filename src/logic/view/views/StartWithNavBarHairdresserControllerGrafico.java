@@ -3,6 +3,7 @@ package logic.view.views;
 import java.io.IOException;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.ToolBar;
@@ -15,7 +16,7 @@ import logic.view.MainView;
 
 public class StartWithNavBarHairdresserControllerGrafico {
 	
-	private BorderPane mainLayout = MainView.getPrLayout();
+	private BorderPane mainLayout = null;
 	private static ToolBar tb;
 	private String transparentStyle = "-fx-background-color: transparent; ";
 	private String pageFlagStyle = "-fx-background-color: #707070; -fx-text-fill: #FFFFFF; ";
@@ -73,7 +74,11 @@ public class StartWithNavBarHairdresserControllerGrafico {
 	}
 	
 	@FXML
-	public boolean goPromHairdr() {
+	public boolean goPromHairdr() throws IOException {
+		BorderPane homeLayout = null;
+		mainLayout= MainView.getPrLayout();
+		homeLayout = FXMLLoader.load(MainView.class.getResource("views/PromotionHairdresser.fxml"));
+		mainLayout.setCenter(homeLayout);
 		shopButton.setStyle(transparentStyle);
 		appointmentHairdresserButton.setStyle(transparentStyle);
 		promotionHairdresserButton.setStyle(pageFlagStyle);
