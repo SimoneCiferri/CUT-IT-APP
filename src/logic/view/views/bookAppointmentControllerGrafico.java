@@ -24,7 +24,6 @@ public class bookAppointmentControllerGrafico {
 	
 	
 	public boolean initialize() throws IOException {
-		
 		return false;
 		
 	}

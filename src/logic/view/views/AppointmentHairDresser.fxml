@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="bHPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="719.0" prefWidth="900.0" style="-fx-background-color: #696969;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.view.views.ManageBookedAppointmentControllerGrafico">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane fx:id="sHPane" layoutX="41.0" layoutY="9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="821.0">
+               <content>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="60.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="APPOINTMENT (HD)" />
+                     </children>
+                  </AnchorPane>
+               </content></ScrollPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -69,7 +69,11 @@ public class StartWithNavBarHairdresserControllerGrafico {
 	}
 	
 	@FXML
-	public boolean goAppHairdr() {
+	public boolean goAppHairdr() throws IOException {
+		BorderPane homeLayout = null;
+		mainLayout= MainView.getPrLayout();
+		homeLayout = FXMLLoader.load(MainView.class.getResource("views/AppointmentHairDresser.fxml"));
+		mainLayout.setCenter(homeLayout);
 		shopButton.setStyle(transparentStyle);
 		appointmentHairdresserButton.setStyle(pageFlagStyle);
 		promotionHairdresserButton.setStyle(transparentStyle);
