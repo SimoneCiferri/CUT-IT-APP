@@ -81,7 +81,7 @@ public class StartWithNavBarCustomerControllerGrafico {
 	public boolean goFav() throws IOException {
 		BorderPane homeLayout = null;
 		mainLayout= MainView.getPrLayout();
-		homeLayout = FXMLLoader.load(MainView.class.getResource("views/Preferiti.fxml"));
+		homeLayout = FXMLLoader.load(MainView.class.getResource("views/PreferitiCustomer.fxml"));
 		mainLayout.setCenter(homeLayout);
 		homeButton.setStyle(transparentStyle);
 		favButton.setStyle(pageFlagStyle);
@@ -95,7 +95,7 @@ public class StartWithNavBarCustomerControllerGrafico {
 	public boolean goApp() throws IOException {
 		BorderPane homeLayout = null;
 		mainLayout= MainView.getPrLayout();
-		homeLayout = FXMLLoader.load(MainView.class.getResource("views/Appointment.fxml"));
+		homeLayout = FXMLLoader.load(MainView.class.getResource("views/AppointmentCustomer.fxml"));
 		mainLayout.setCenter(homeLayout);
 		homeButton.setStyle(transparentStyle);
 		favButton.setStyle(transparentStyle);
@@ -109,7 +109,7 @@ public class StartWithNavBarCustomerControllerGrafico {
 	public boolean goProm() throws IOException {
 		BorderPane homeLayout = null;
 		mainLayout= MainView.getPrLayout();
-		homeLayout = FXMLLoader.load(MainView.class.getResource("views/Promotion.fxml"));
+		homeLayout = FXMLLoader.load(MainView.class.getResource("views/PromotionCustomer.fxml"));
 		mainLayout.setCenter(homeLayout);
 		homeButton.setStyle(transparentStyle);
 		favButton.setStyle(transparentStyle);
